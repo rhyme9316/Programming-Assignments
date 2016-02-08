@@ -12,8 +12,8 @@
 */
 
 Route::get('/', 'PageController@index');
-Route::get('/', 'PageControoler@greet');
-Route::get('/', 'WeatherController@getWeather');
+Route::get('/greet/{name}', 'PageControoler@greet');
+Route::get('/weather/{location}', 'WeatherController@getWeather');
 
 
 /*
